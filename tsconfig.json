@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                // versión de JS que quieres generar
+    "module": "ES6",                // para usar imports/exports modernos
+    "outDir": "./public",   // salida de los .js compilados
+    "rootDir": "./src",             // carpeta donde está tu código TS
+    "strict": true,                 // buenas prácticas
+    "esModuleInterop": true,        // compatibilidad con módulos
+    "lib": ["DOM", "ES2016"]
+  },
+  "include": ["src"]
+}
