@@ -97,9 +97,18 @@ function renderApp() {
       </header>
 
       <section class="scoreboard" aria-live="polite">
-        <div class="score"><span>Jugador</span><strong id="score-jugador">0</strong></div>
-        <div class="score"><span>Empates</span><strong id="score-empates">0</strong></div>
-        <div class="score"><span>PC</span><strong id="score-pc">0</strong></div>
+        <div class="score score-user">
+          <div class="who"><span class="badge user" aria-hidden="true">🧑‍💻</span><span>Jugador</span></div>
+          <strong id="score-jugador">0</strong>
+        </div>
+        <div class="score score-draw">
+          <div class="who"><span class="badge draw" aria-hidden="true">⚖️</span><span>Empates</span></div>
+          <strong id="score-empates">0</strong>
+        </div>
+        <div class="score score-pc">
+          <div class="who"><span class="badge pc" aria-hidden="true">🤖</span><span>PC</span></div>
+          <strong id="score-pc">0</strong>
+        </div>
       </section>
 
       <section class="choices" role="group" aria-label="Opciones de juego">
